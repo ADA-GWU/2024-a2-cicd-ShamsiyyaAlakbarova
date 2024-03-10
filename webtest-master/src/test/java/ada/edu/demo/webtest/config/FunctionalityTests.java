@@ -1,3 +1,4 @@
+
 package ada.edu.demo.webtest.config;
 
 import ada.edu.demo.webtest.entity.Student;
@@ -10,11 +11,12 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -27,7 +29,7 @@ public class FunctionalityTests {
     private StudentService studentService;
 
     @Test
-    @DisplayName("Test finding s student by ID")
+    @DisplayName("Test finding a student by ID")
     public void testStudentSearchById() {
         when(studentRepository.findById(1)).thenReturn(Optional.of(new Student()));
         Student result = studentService.getStudentById(1);
@@ -46,6 +48,31 @@ public class FunctionalityTests {
         when(studentRepository.findAll()).thenReturn(stList);
         List<Student> students = studentService.getStudentByEitherName("Jamal","Aliyev");
         System.out.printf("Found students: "+students.size());
-        assertEquals(2, students.size() );
+        assertEquals(2, students.size());
+    }
+
+    @Test
+    @DisplayName("Ensure getStudentByName accurately retrieves students by name")
+    void testGetStudentByName() {
+        // Arrange
+        Student shamsNajaf = new Student();
+        shamsNajaf.setStudentId(1);
+        shamsNajaf.setFirstName("Shams");
+        shamsNajaf.setLastName("Najaf");
+
+        Student shamsiyyaNajaf = new Student();
+        shamsiyyaNajaf.setStudentId(2);
+        shamsiyyaNajaf.setFirstName("Shamsiyya");
+        shamsiyyaNajaf.setLastName("Najaf");
+
+        when(studentRepository.findByNameCase("%Najaf%")).thenReturn(Arrays.asList(shamsNajaf, shamsiyyaNajaf));
+
+        // Act
+        Iterable<Student> students = studentService.getStudentByName("Najaf");
+
+        // Assert
+        assertTrue(((List<Student>) students).contains(shamsNajaf));
+        assertTrue(((List<Student>) students).contains(shamsiyyaNajaf));
     }
 }
+

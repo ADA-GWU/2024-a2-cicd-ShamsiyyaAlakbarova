@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38ddd1ff-8536-4fb7-9837-ada601837882" name="Changes" comment="" />
+    <list default="true" id="38ddd1ff-8536-4fb7-9837-ada601837882" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ada/edu/demo/webtest/UnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ada/edu/demo/webtest/UnitTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ada/edu/demo/webtest/config/FunctionalityTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ada/edu/demo/webtest/config/FunctionalityTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ada/edu/demo/webtest/config/FunctionalityTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ada/edu/demo/webtest/config/FunctionalityTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2dPySdjMowc9cVR3v4Qobvb7f4k" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,11 +32,85 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.FunctionalityTests.testGetStudentByName.executor": "Run",
+    "JUnit.UnitTests$StudentServiceTest.executor": "Run",
+    "JUnit.UnitTests.executor": "Run",
+    "JUnit.UnitTests.testGetStudentByName.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.FunctionalityTests.testGetStudentByName">
+    <configuration name="FunctionalityTests.testGetStudentByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ada.edu.demo.webtest.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ada.edu.demo.webtest.config" />
+      <option name="MAIN_CLASS_NAME" value="ada.edu.demo.webtest.config.FunctionalityTests" />
+      <option name="METHOD_NAME" value="testGetStudentByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ada.edu.demo.webtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ada.edu.demo.webtest" />
+      <option name="MAIN_CLASS_NAME" value="ada.edu.demo.webtest.UnitTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnitTests.testGetStudentByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webtest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ada.edu.demo.webtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ada.edu.demo.webtest" />
+      <option name="MAIN_CLASS_NAME" value="ada.edu.demo.webtest.UnitTests" />
+      <option name="METHOD_NAME" value="testGetStudentByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="webtest-master" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="webtest-master" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FunctionalityTests.testGetStudentByName" />
+        <item itemvalue="JUnit.UnitTests.testGetStudentByName" />
+        <item itemvalue="JUnit.UnitTests" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
