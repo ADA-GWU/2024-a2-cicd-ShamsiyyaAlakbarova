@@ -1,4 +1,4 @@
-/*package ada.edu.demo.webtest;
+package ada.edu.demo.webtest;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
@@ -76,4 +76,4 @@ class WebInterfaceTests {
 		assert(bodyElementLName.size() == 1);
 	}
 
-}*/
+}
