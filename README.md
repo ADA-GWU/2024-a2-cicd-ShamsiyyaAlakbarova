@@ -5,4 +5,9 @@
 <p>Step 1. Go to my github repository (https://github.com/ADA-GWU/2024-a2-cicd-ShamsiyyaAlakbarova).<br>Step 2. Press to green CODE button, and download the repository as a ZIP file.<br>
 Step 3. Unzip the file.<br>
 Step 4. Open downloaded unzipped project in Intellij IDEA.<br>
-Step 5. Run this commands in terminal:<br>1) mvn clean package<br>2) docker build -t springio/webtest .<br>3) docker run -p 8080:8080 springio/webtest<br>
+Step 5. Run this commands in terminal:<br>1) mvn clean package<br>2) docker build -t springio/webtest .<br>3) docker run -p 8080:8080 springio/webtest (make sure this port is available)<br>
+Application is running on port 8080. Set up is DONE!<br></p>
+
+<h2>3.Run the Tests</h2>
+<h3>1) Unit Tests</h3>
+<p></p>

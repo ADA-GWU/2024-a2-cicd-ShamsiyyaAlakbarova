@@ -60,19 +60,19 @@ public class FunctionalityTests {
         shamsNajaf.setFirstName("Shams");
         shamsNajaf.setLastName("Najaf");
 
-        Student shamsiyyaNajaf = new Student();
-        shamsiyyaNajaf.setStudentId(2);
-        shamsiyyaNajaf.setFirstName("Shamsiyya");
-        shamsiyyaNajaf.setLastName("Najaf");
+        Student shamsAlakbar = new Student();
+        shamsAlakbar.setStudentId(2);
+        shamsAlakbar.setFirstName("Shams");
+        shamsAlakbar.setLastName("Alakbar");
 
-        when(studentRepository.findByNameCase("%Najaf%")).thenReturn(Arrays.asList(shamsNajaf, shamsiyyaNajaf));
+        when(studentRepository.findByNameCase("%Shams%")).thenReturn(Arrays.asList(shamsNajaf, shamsAlakbar));
 
         // Act
-        Iterable<Student> students = studentService.getStudentByName("Najaf");
+        Iterable<Student> students = studentService.getStudentByName("Shams");
 
         // Assert
         assertTrue(((List<Student>) students).contains(shamsNajaf));
-        assertTrue(((List<Student>) students).contains(shamsiyyaNajaf));
+        assertTrue(((List<Student>) students).contains(shamsAlakbar));
     }
 }
 
