@@ -9,5 +9,12 @@ Step 5. Run this commands in terminal:<br>1) mvn clean package<br>2) docker buil
 Application is running on port 8080. Set up is DONE!<br></p>
 
 <h2>3.Run the Tests</h2>
-<h3>1) Unit Tests</h3>
-<p></p>
+<h3>1) Unit Tests. UnitTests class.</h3>
+<p>1. The number of courses shall correspond to the added courses<br>
+2. The total credits shall correspond to the sum of the added credits<br>
+</p>
+
+<h3>2) Functionality Tests. FunctionalityTests class.</h3>
+ <p>1. Test finding a student by ID<br>
+2. Search by first or last name<br>
+3. Get student by name is accurate<br></p>
