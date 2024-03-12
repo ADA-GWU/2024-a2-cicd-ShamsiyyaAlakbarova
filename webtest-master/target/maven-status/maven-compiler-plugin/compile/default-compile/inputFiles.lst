@@ -1,9 +1,9 @@
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\entity\Course.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\controller\StudentController.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\exception\GlobalExceptionHandler.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\entity\Student.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\repository\CourseRepository.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\exception\StudentException.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\service\StudentService.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\repository\StudentRepository.java
-C:\Users\Hp\Desktop\webtest-master\src\main\java\ada\edu\demo\webtest\JpademoApplication.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\JpademoApplication.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\repository\StudentRepository.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\exception\StudentException.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\repository\CourseRepository.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\entity\Student.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\service\StudentService.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\controller\StudentController.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\entity\Course.java
+C:\Users\Hp\Desktop\As2 Prod&Ops\2024-a2-cicd-ShamsiyyaAlakbarova\webtest-master\src\main\java\ada\edu\demo\webtest\exception\GlobalExceptionHandler.java
