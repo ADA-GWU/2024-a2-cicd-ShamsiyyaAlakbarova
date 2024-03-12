@@ -39,40 +39,39 @@ public class FunctionalityTests {
     @Test
     @DisplayName("Search by first or last name")
     public void testStudentSearch() {
-        Student s1 = new Student(1,"Jamal","Hasanov","a@b.com",new Date(),null,null);
-        Student s2 = new Student(2,"Aliya","Mammadova","a@b.com",new Date(),null,null);
-        Student s3 = new Student(3,"Kamran","Aliyev","a@b.com",new Date(),null,null);
+        Student s1 = new Student(1, "Jamal", "Hasanov", "a@b.com", new Date(), null, null);
+        Student s2 = new Student(2, "Aliya", "Mammadova", "a@b.com", new Date(), null, null);
+        Student s3 = new Student(3, "Kamran", "Aliyev", "a@b.com", new Date(), null, null);
 
-        List<Student> stList = List.of(s1,s2,s3);
+        List<Student> stList = List.of(s1, s2, s3);
 
         when(studentRepository.findAll()).thenReturn(stList);
-        List<Student> students = studentService.getStudentByEitherName("Jamal","Aliyev");
-        System.out.printf("Found students: "+students.size());
+        List<Student> students = studentService.getStudentByEitherName("Jamal", "Aliyev");
+        System.out.printf("Found students: " + students.size());
         assertEquals(2, students.size());
     }
-
     @Test
-    @DisplayName("Ensure getStudentByName accurately retrieves students by name")
+    @DisplayName("Get student by name is accurate")
     void testGetStudentByName() {
-        // Arrange
+
         Student shamsNajaf = new Student();
         shamsNajaf.setStudentId(1);
         shamsNajaf.setFirstName("Shams");
         shamsNajaf.setLastName("Najaf");
+
 
         Student shamsAlakbar = new Student();
         shamsAlakbar.setStudentId(2);
         shamsAlakbar.setFirstName("Shams");
         shamsAlakbar.setLastName("Alakbar");
 
-        when(studentRepository.findByNameCase("%Shams%")).thenReturn(Arrays.asList(shamsNajaf, shamsAlakbar));
+       when(studentRepository.findByNameCase("%Shams%")).thenReturn(Arrays.asList(shamsNajaf, shamsAlakbar));
 
-        // Act
-        Iterable<Student> students = studentService.getStudentByName("Shams");
+       Iterable<Student> students = studentService.getStudentByName("Shams");
 
-        // Assert
-        assertTrue(((List<Student>) students).contains(shamsNajaf));
-        assertTrue(((List<Student>) students).contains(shamsAlakbar));
+       assertTrue(((List<Student>) students). contains(shamsNajaf));
+       assertTrue(((List<Student>) students). contains(shamsAlakbar));
     }
+
 }
 

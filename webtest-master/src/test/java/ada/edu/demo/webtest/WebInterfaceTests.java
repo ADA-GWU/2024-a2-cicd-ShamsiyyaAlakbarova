@@ -31,7 +31,7 @@ class WebInterfaceTests {
 	@Order(1)
 	@DisplayName("Create a user")
 	public void CreateUser() {
-		webDriver.get("http://localhost:"+port+"/student/new");
+		webDriver.get("http://localhost:" + port + "/student/new");
 
 		WebElement studentIdInput = webDriver.findElement(By.id("studentId"));
 		WebElement firstNameInput = webDriver.findElement(By.id("firstName"));
@@ -50,8 +50,7 @@ class WebInterfaceTests {
 			Thread.sleep(2000);
 			emailInput.sendKeys("ns@ada.edu.az");
 			Thread.sleep(2000);
-		}
-		catch (Exception ex) {
+		} catch (Exception ex) {
 			System.out.println(ex);
 		}
 
@@ -65,10 +64,10 @@ class WebInterfaceTests {
 	@DisplayName("Check the created user")
 	public void CheckUser() {
 		// Check if the student is added
-		webDriver.get("http://localhost:"+port+"/student/list");
+		webDriver.get("http://localhost:" + port + "/student/list");
 		List<WebElement> bodyElementFName = webDriver.findElements(By.xpath("//*[contains(text(), 'Nigar')]"));
 		List<WebElement> bodyElementLName = webDriver.findElements(By.xpath("//*[contains(text(), 'Salayeva')]"));
-		System.out.println("Element result"+bodyElementLName);
+		System.out.println("Element result" + bodyElementLName);
 
 		try {
 			Thread.sleep(2000);
@@ -77,41 +76,31 @@ class WebInterfaceTests {
 		}
 
 		// Check if the text "Jamal" is present in the page content
-		assert(bodyElementFName.size() == 1);
-		assert(bodyElementLName.size() == 1);
+		assert (bodyElementFName.size() == 1);
+		assert (bodyElementLName.size() == 1);
 	}
 	@Test
 	@Order(3)
 	@DisplayName("Update Student With Courses")
 	public void updateStudentWithCourses() {
-		// Assume an existing student ID to update. Replace with an actual ID.
 		int studentIdToUpdate = 1;
 		webDriver.get("http://localhost:" + port + "/student/update?id=" + studentIdToUpdate);
 
-		// Use explicit wait instead of Thread.sleep()
-		WebDriverWait wait = new WebDriverWait(webDriver, 10); // Wait up to 10 seconds
+		WebDriverWait wait = new WebDriverWait(webDriver, 10); // Wait 10 seconds
 
 		// Wait for the submit button to be clickable
 		WebElement submitButton = wait.until(ExpectedConditions.elementToBeClickable(By.id("submit")));
 
-		// Select courses. This example assumes checkboxes for course selection.
-		// Adjust the logic based on your actual page structure.
 		List<WebElement> courseCheckboxes = webDriver.findElements(By.name("courses"));
 		for (WebElement checkbox : courseCheckboxes) {
 			if (!checkbox.isSelected()) {
-				checkbox.click(); // Select all available courses for simplicity
+				checkbox.click(); // Select all available courses
 			}
 		}
 
-		// Submit the form
 		submitButton.click();
 
-		// Verify the courses are added by navigating to the student's detail page and checking selected courses
-		// This step depends on how courses are displayed on the student's detail or list page after being added
 		webDriver.get("http://localhost:" + port + "/student/id?id=" + studentIdToUpdate);
-
 	}
 
-
 }
-
