@@ -9,6 +9,7 @@ Step 5. Run this commands in terminal:<br>1) mvn clean package<br>2) docker buil
 Application is running on port 8080. Set up is DONE!<br></p>
 
 <h2>3.Run the Tests</h2>
+<p>In order to run the tests you should be inside webtest-master directory. You can press run buttons, or use Ctrl + Shift + f10.</p>
 <h3>1) Unit Tests. UnitTests class.</h3>
 <p>1. The number of courses shall correspond to the added courses<br>
 2. The total credits shall correspond to the sum of the added credits<br>
