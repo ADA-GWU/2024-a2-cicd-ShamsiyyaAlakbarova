@@ -7,8 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  build_and_test:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,6 +18,8 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
-    - name: Run tests
+      run: mvn -B package
+      working-directory: ./webtest-master
+    - name: Run unit tests
       run: mvn test
+      working-directory: ./webtest-master
