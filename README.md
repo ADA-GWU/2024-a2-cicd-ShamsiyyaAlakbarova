@@ -18,3 +18,9 @@ Application is running on port 8080. Set up is DONE!<br></p>
  <p>1. Test finding a student by ID<br>
 2. Search by first or last name<br>
 3. Get student by name is accurate<br></p>
+
+<h3>2) Web Interface Tests. WebInterfaceTestsTests class.</h3>
+ <p>1. Create a user<br>
+2. Check the created user<br>
+3. Update Student With Courses<br>
+ If you want to see visual representation of Web tests, go to SeleniumConfig file=> comment "return new FirefoxDriver(options);", and uncomment "return new FirefoxDriver();"</p>
